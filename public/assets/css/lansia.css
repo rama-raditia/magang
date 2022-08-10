@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  font-family: sans-serif;
+  overflow: hidden;
+  user-select:none ;
+}
+nav .logo{
+  color: white;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 70px;
+  padding-left: 110px;
+}
+nav{
+  height: 70px;
+  background-color: blue;
+  box-shadow: 0 3px 15px;
+}
+nav ul{
+  display: inline;
+}
+nav ul li a {
+  color: white;
+  display: block;
+  padding: 0px 15px;
+  line-height: 70px;
+  font-size: 20px;
+  transition: .5s;
+  background-color: blue;
+}
+nav ul li a:hover,
+nav ul li a.active{
+  color:  white;
+
+}
+nav ul ul{
+ position: absolute;
+ top: 85px;
+ border-top: 3px solid white;
+ opacity: 0;
+ visibility: hidden;
+}
+
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear
+
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border-top:none ;
+  border: 1px solid red;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+position: relative;
+top: -70px;
+left: 150px;
+}
+nav ul ul li a{
+margin: left; 
+
+}
+section{
+  background: url();
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
